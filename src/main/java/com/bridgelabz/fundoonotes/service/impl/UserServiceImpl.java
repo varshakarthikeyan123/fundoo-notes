@@ -33,6 +33,6 @@ public class UserServiceImpl implements UserService {
             throw new RuntimeException("Invalid Password");
         }
 
-        return "Login Successful";
+        return "TOKEN_" + user.getEmail(); // simple token (assignment level)
     }
 }
